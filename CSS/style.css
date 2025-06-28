@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif ;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #000000;
+}
+
+nav {
+  margin: 1rem;
+  text-align: center;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+nav a {
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: ease-in-out 0.5s;
+}
+
+nav a:hover {
+  color: #D4AF37;
+}
+
+.button {
+  background-color: #B8860B;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  transition: ease-in-out 0.5s;
+  max-width: 10rem;
+  text-align: center;
+  min-width: fit-content;
+}
+
+.button:hover {
+  background-color: #D4AF37;
+}
+
+.button a {
+  color: #000000;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #B8860B;
+}
+
+.logo-img {
+  width: 9rem;
+  min-width: 5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.info {
+  padding: 4rem 0;
+}
+
+.container-info {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.info-conteudo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.bloco-texto {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.4rem;
+  text-align: center;
+}
+
+.bloco-texto, .imagem-display {
+  flex: 1;
+  min-width: 50%;
+  justify-content: space-between;
+}
+
+.bloco-texto h3 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.bloco-texto p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.imagem-display {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.bloco-texto h5 {
+  font-weight: 300;
+  text-align: left;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem;
+  padding-bottom: 2rem;
+}
+
+.populares {
+  margin: 0 auto;
+}
+
+.container-pratos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1rem));
+  gap: 1.5rem;
+  margin: 1.5rem;
+  justify-content: space-around;
+}
+
+.prato {
+  background-color: #E6D3A7;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  box-shadow: #D4AF37 0.1rem 0.1rem 0.2rem;
+  transition: ease-in-out 0.5s;
+  text-align: center;
+}
+
+.prato:hover {
+  box-shadow: #D4AF37 0.5rem 0.6rem 0.8rem;
+}
+
+.prato img {
+  border-radius: 1rem;
+}
+
+.prato h5 {
+  font-size: 1.8rem;
+  color: #9E2A2F;
+}
+
+.prato p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.price {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #B8860B;
+}
+
+.comentarios {
+  padding: 2rem 0;
+}
+
+.container-pessoas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.pessoa {
+  background-color: #E6D3A7;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: left;
+  margin: 1.5rem;
+  gap: 2rem;
+}
+
+.pessoa img {
+  border-radius: 50%;
+  max-width: 8rem;
+}
+
+footer {
+  background-color: #000000;
+  padding: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem;
+  color: #B8860B;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.titulo-footer {
+  margin-bottom: 1rem;
+}
+
+.fundo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials ul {
+  display: flex;
+  align-items: center;
+}
+
+.socials li {
+  padding: 1rem 0.5rem;
+}
+
+.socials img {
+  width: 2.5rem;
+}
